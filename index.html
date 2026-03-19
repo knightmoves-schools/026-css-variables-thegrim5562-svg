@@ -6,17 +6,15 @@
         :root {
             --wide-text-size: 200px;
             --narrow-text-size: 150px;
+            --text-padding: 10px
         }
-        
-        .root {
-            width: 120px;
-            border-style: solid;
-            padding: 10px;
+        .narrow-text {
+          --narrow-text-class: 120px;
         }
-        .root {
-            width: 150px;
-            border-style: solid;
-            padding: 10px;
+        @media ( max-width: 150px) {
+            root {
+                --wide-text-size: 180px;
+            }
         }
     </style>
 </head>
